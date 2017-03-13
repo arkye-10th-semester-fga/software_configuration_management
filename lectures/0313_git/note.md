@@ -32,7 +32,7 @@
 
 # Git Practice
 
-```{r, engine='bash', count_lines}
+```Shell
 mkdir myrepo
 cd myrepo
 git init
@@ -40,4 +40,13 @@ tree -a .
 cd ..
 git clone http://... myreponame
 git remote -v
+git remote add origin http://...
+git remote rm origin
+git remote rename origin main
+git status
+touch README.md
+git add README.md
+touch deps/description.md
+git add deps/description.md
+git commit -m "Initial Commit" ""
 ```
