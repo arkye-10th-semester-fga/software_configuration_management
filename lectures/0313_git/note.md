@@ -48,5 +48,49 @@ touch README.md
 git add README.md
 touch deps/description.md
 git add deps/description.md
-git commit -m "Initial Commit" ""
+git commit -m "Initial Commit"
+git log --oneline
+git diff
+git diff --cached
+git show <hash>
+git add -p .
+git add -u
+git rm
+git stash
+git stash list
+git stash pop
+git stash apply stash@{0}
+git stash drop
+git clean -f
+git checkout -b my_feature
+git branch
+git branch -a
+git push origin master:my_remote_branch
+git branch -d my_branch
+git fetch origin
+git pull origin branch
+git pull --rebase origin branch
+git merge master
+git diff master my_branch
+git rebase master
+git tag v1.0.0 COMMIT_HASH
+git tag -l
+git tag -d v1.0.0
+git checkout .
+git checkout -p .
+git reset --hard origin/master
+git config color.ui true
+git config format.pretty oneline
+git config user.email ""
+git config user.name ""
+git config --global core.editor ""
+git config --global commit.template /path/to/git-commit-template.txt
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+'''.git/hooks/pre-commit
+pre-commit
+post-commit
+'''.gitattributes
 ```
